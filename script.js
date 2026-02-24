@@ -2,7 +2,7 @@
 //testing adding div then creating grid
 const gridContainer = document.querySelector('.grid-container');
 
-let gridSize = 16;
+let gridSize = 64;
 let Default = gridSize * gridSize;
 
 
@@ -11,7 +11,9 @@ function createGrid(grid){
 
     for (i = 0; i < grid; i++) {
         const gridItem = document.createElement('div');
-        gridItem.classList.add('box')
+        gridItem.classList.add('box');
+        gridItem.style.height = `calc(100% /${gridSize} )`;
+        gridItem.style.width = `calc(100% / ${gridSize})`;
 
 
         gridContainer.appendChild(gridItem);
