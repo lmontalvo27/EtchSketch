@@ -20,8 +20,38 @@ body {
     width: 600px;
 }
 
+.hover-div {
+    background-color: blueviolet;
+    height: 16px;
+    width: 16px;
+}
+
 .box{
     box-sizing: border-box;
+    background-color: lightgray;
   
     border: 1px solid black;
+}
+
+.button-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 15px;
+    
+    
+    border: 3px solid black;
+    border-radius: 15px;
+    height: 30px;
+    width: 255px;
+
+}
+
+.resize-button {
+    background-color: lightblue;
+}
+
+.reset-button {
+    background-color: lightblue;
 }
